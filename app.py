@@ -179,12 +179,12 @@ with tab_predictor:
             with col_inner1:
                 glucose = st.slider(
                     "Glucose (mg/dL)", 
-                    min_value=0, max_value=200, value=120, 
+                    min_value=40, max_value=250, value=120, 
                     help="Plasma glucose concentration 2 hours in an oral glucose tolerance test. Normal: < 140 mg/dL"
                 )
                 blood_pressure = st.slider(
                     "Blood Pressure (mm Hg)", 
-                    min_value=0, max_value=122, value=70,
+                    min_value=40, max_value=140, value=70,
                     help="Diastolic blood pressure. Normal: 60-80 mm Hg"
                 )
                 skin_thickness = st.slider(
@@ -201,17 +201,17 @@ with tab_predictor:
             with col_inner2:
                 bmi = st.slider(
                     "Body Mass Index (BMI)", 
-                    min_value=0.0, max_value=67.1, value=32.0, step=0.1,
+                    min_value=10.0, max_value=70.0, value=32.0, step=0.1,
                     help="Weight in kg / (height in m)^2. Healthy range: 18.5 - 24.9"
                 )
                 dpf = st.slider(
                     "Diabetes Pedigree Function", 
-                    min_value=0.078, max_value=2.42, value=0.37, step=0.001,
+                    min_value=0.078, max_value=2.50, value=0.370, step=0.001,
                     help="A score representing family history and genetic predisposition to diabetes."
                 )
                 age = st.slider(
                     "Age (Years)", 
-                    min_value=21, max_value=81, value=33,
+                    min_value=21, max_value=100, value=33,
                     help="Age of the patient."
                 )
             
