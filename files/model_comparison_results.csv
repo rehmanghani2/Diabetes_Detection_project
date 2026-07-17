@@ -1,0 +1,6 @@
+Model,Accuracy,Precision,Recall,F1-score,Train Time (s),Predict Time (s)
+Decision Tree,75.97,63.93,72.22,67.83,0.0033,0.00033
+SVM,74.03,65.22,55.56,60.0,0.0354,0.00221
+Random Forest,74.03,65.22,55.56,60.0,0.3135,0.01515
+KNN,74.03,63.46,61.11,62.26,0.0018,0.00338
+Logistic Regression,70.78,60.0,50.0,54.55,0.0058,0.00019
