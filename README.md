@@ -1,1 +1,0 @@
-# Diabetes_Detection_project
