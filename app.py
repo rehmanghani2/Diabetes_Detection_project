@@ -16,11 +16,11 @@ st.set_page_config(
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, 'All Docs', 'models', 'best_model.pkl')
-SCALER_PATH = os.path.join(BASE_DIR, 'All Docs', 'models', 'scaler.pkl')
-FEATURES_PATH = os.path.join(BASE_DIR, 'All Docs', 'models', 'feature_names.pkl')
-RESULTS_CSV = os.path.join(BASE_DIR, 'All Docs', 'files', 'model_comparison_results.csv')
-RESULT_IMGS_DIR = os.path.join(BASE_DIR, 'All Docs', 'result')
+MODEL_PATH = os.path.join(BASE_DIR, 'result', 'models', 'best_model.pkl')
+SCALER_PATH = os.path.join(BASE_DIR, 'result', 'models', 'scaler.pkl')
+FEATURES_PATH = os.path.join(BASE_DIR, 'result', 'models', 'feature_names.pkl')
+RESULTS_CSV = os.path.join(BASE_DIR, 'result', 'model_comparison_results.csv')
+RESULT_IMGS_DIR = os.path.join(BASE_DIR, 'result')
 
 # Helper functions to load models safely
 @st.cache_resource
@@ -383,7 +383,7 @@ with tab_data:
     st.write("Analyze structural attributes, correlations, and sample distributions from the baseline Pima dataset.")
     
     # Load and show stats
-    pima_csv = os.path.join(BASE_DIR, 'All Docs', 'files', 'pima.csv')
+    pima_csv = os.path.join(BASE_DIR, 'result', 'models', 'pima.csv')
     if os.path.exists(pima_csv):
         # We need headers for Pima
         pima_cols = ['Nausea', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
@@ -421,4 +421,4 @@ with tab_data:
             if os.path.exists(class_dist_img):
                 st.image(class_dist_img, caption="Figure 1: Outcome Class Distribution", use_container_width=True)
     else:
-        st.info("Pima dataset file not found in 'All Docs/files/pima.csv'.")
+        st.info("Pima dataset file not found in 'result/models/pima.csv'.")

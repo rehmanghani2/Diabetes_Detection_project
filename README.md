@@ -31,25 +31,22 @@ After starting the server, open your web browser and navigate to:
 Diabetes_prediction_project/
 ├── app.py                     # Main Streamlit dashboard application
 ├── README.md                  # Project documentation (this file)
-└── All Docs/
-    ├── models/
-    │   ├── best_model.pkl     # Saved Decision Tree model (joblib format)
-    │   ├── scaler.pkl         # Fitted StandardScaler preprocessing pipeline
-    │   └── feature_names.pkl  # List of features used during training
-    ├── files/
-    │   ├── pima.csv           # Baseline Pima Indians Diabetes Dataset
-    │   └── model_comparison_results.csv  # Performance metrics for compared models
-    ├── Notebooks/
-    │   ├── Diabetes_Prediction_ML_Project.ipynb          # Model exploration notebook
-    │   └── Diabetes_Prediction_ML_Project_Kaggle.ipynb   # Model training & serialization notebook
-    └── result/
-        ├── fig1_class_distribution.png
-        ├── fig2_feature_distributions.png
-        ├── fig3_correlation_heatmap.png
-        ├── fig4_accuracy_comparison.png
-        ├── fig5_prf1_comparison.png
-        ├── fig6_training_time.png
-        └── fig7_confusion_matrix.png
+└── result/
+    ├── fig1_class_distribution.png
+    ├── fig2_feature_distributions.png
+    ├── fig3_correlation_heatmap.png
+    ├── fig4_accuracy_comparison.png
+    ├── fig5_prf1_comparison.png
+    ├── fig6_training_time.png
+    ├── fig7_confusion_matrix.png
+    ├── model_comparison_results.csv  # Performance metrics for compared models
+    ├── matrix/
+    │   └── Confusion_Matrix_new.png
+    └── models/
+        ├── best_model.pkl     # Saved Decision Tree model (joblib format)
+        ├── scaler.pkl         # Fitted StandardScaler preprocessing pipeline
+        ├── feature_names.pkl  # List of features used during training
+        └── pima.csv           # Baseline Pima Indians Diabetes Dataset
 ```
 
 ---
